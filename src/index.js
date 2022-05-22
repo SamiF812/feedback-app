@@ -9,7 +9,3 @@ ReactDOM.render(
 </React.StrictMode>,
 document.getElementById("root")
 );
-
-App.listen(process.env.port, () => {
-    console.log('you are connected!');
-});
