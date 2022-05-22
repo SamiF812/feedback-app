@@ -7,7 +7,7 @@ import FeedbackContext from "../components/context/FeedbackContext";
 
 function FeedbackForm() {
     const [text, setText] = useState("");
-    const [rating, setRating] = useState(10);
+    const [rating, setRating] = useState(0);
     const [btnDisabled, setBtnDisabled] = useState(true);
     const [message, setMessage] = useState("");
 
@@ -51,6 +51,7 @@ function FeedbackForm() {
             }
 
             setText("");
+            setRating(0);
         }
     }
     return (
