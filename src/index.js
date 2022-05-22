@@ -10,3 +10,6 @@ ReactDOM.render(
 document.getElementById("root")
 );
 
+App.listen(process.env.port, () => {
+    console.log('you are connected!');
+});
